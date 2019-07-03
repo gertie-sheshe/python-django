@@ -4,7 +4,7 @@ from django.utils import timezone
 # Create your models here.
 
 class Video(models.Model):
-    videotitle = models.CharField(max_length=20)
+    videotitle = models.CharField(max_length=40)
     videodesc = models.TextField()
     date_added = models.DateTimeField(default=timezone.now)
 
