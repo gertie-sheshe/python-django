@@ -10,6 +10,7 @@ def index(request):
 
 def requestform(request):
     if request.method == 'POST':
+        # Not the best approach. Security
         form = VideoForm(request.POST)
 
         if form.is_valid():
