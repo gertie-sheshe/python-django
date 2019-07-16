@@ -17,4 +17,5 @@ class ArticleCreateView(CreateView):
     model = Article
     template_name = 'article_new.html'
     fields = '__all__'
+    
    
