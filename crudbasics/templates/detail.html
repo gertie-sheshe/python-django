@@ -7,4 +7,6 @@
     <p>{{data_object.text}}</p>
 </div>
 
+<h4><a href="{% url 'article_edit' data_object.pk %}">Edit this post</a></h4>
+
 {% endblock content %}
