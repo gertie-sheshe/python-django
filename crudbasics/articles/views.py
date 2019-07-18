@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
-from django.views.generic.edit import CreateView, UpdateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.urls import reverse_lazy
 from . models import Article
 
 # Create your views here.
@@ -23,4 +24,9 @@ class ArticleUpdateView(UpdateView):
     template_name = 'article_edit.html'
     fields = ['title', 'text']
     
+class ArticleDeleteView(DeleteView):
+    model = Article
+    template_name = 'article_delete.html'
+    context_object_name = 'data_object'
+    success_url = revere_lazy('home')
    
