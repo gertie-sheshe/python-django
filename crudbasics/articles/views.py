@@ -20,7 +20,7 @@ class ArticleCreateView(CreateView):
 
 class ArticleUpdateView(UpdateView):
     model = Article
-    template_name_field = 'article_edit.html'
+    template_name = 'article_edit.html'
     fields = ['title', 'text']
     
    
