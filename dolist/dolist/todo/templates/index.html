@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,8 +13,8 @@
     />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/flatly.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="{% static 'css/flatly.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
@@ -65,9 +66,5 @@
       </div>
     </div>
 
-    <!-- jQuery -->
-    <script src="./js/jquery.min.js"></script>
-    <!-- Bootstrap JavaScript -->
-    <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>
