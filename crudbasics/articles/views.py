@@ -28,5 +28,5 @@ class ArticleDeleteView(DeleteView):
     model = Article
     template_name = 'article_delete.html'
     context_object_name = 'data_object'
-    success_url = revere_lazy('home')
+    success_url = reverse_lazy('home')
    
